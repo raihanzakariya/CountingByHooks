@@ -2,17 +2,18 @@ import React, { useState } from "react";
 
 const App = () => {
   let newTime = new Date().toLocaleTimeString();
-  let [actualTime, setTime] = useState(newTime);
-  const UpDate = () => {
-    let newCTime = new Date().toLocaleTimeString();
-    setTime(newCTime);
+  const [actualTime, setTime] = useState(newTime);
+
+  const UpdateTime = () => {
+    newTime = new Date().toLocaleTimeString();
+    setTime(newTime);
   };
+  setInterval(UpdateTime, 100);
   //  const count = useState();
   return (
     <>
       <div>
-        <h1 className="colorr"> {actualTime} </h1>
-        <button onClick={UpDate}> Get TIME </button>
+        <h1> {actualTime} </h1>
       </div>
     </>
   );

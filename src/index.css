@@ -5,7 +5,7 @@ body {
     sans-serif;
 }
 * {
-  background-color: rgb(47, 47, 46);
+  background-color: rgba(10, 10, 9, 0.622);
 }
 div {
   padding: 10px;
@@ -16,14 +16,10 @@ div {
 
   align-items: center;
 }
-button {
-  padding: 12px 12px;
-  background-color: rgb(172, 110, 229);
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: 700;
-}
-.colorr {
+h1 {
+  padding: 100px;
+  /* font-weight: bolder; */
   color: aqua;
+
+  font-size: 85px;
 }
